@@ -1,0 +1,75 @@
+div.product-container{
+    width: 100%;
+    height: 100%;
+    margin: 12px auto;
+   
+}
+
+ div.product-container{
+    width: 100%;
+    display: grid;
+    margin: 0 auto;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+ div.product-container div.card{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: 12px;
+}
+ div.product-container div.card img{
+    height: 300px;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 11px 11px 10px grey;
+}
+div.main-section > div.product-container div.card div.card-text{
+    position: absolute;
+    bottom: 0;
+    border-radius: 12px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 80%;
+    height: 0;
+    opacity: 0;
+    transition: 1s;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+div.main-section > div.product-container div.card:hover > div.card-text{ 
+    height: 80px;
+    opacity: 1;
+     z-index: 999;
+}
+/* responsiveness tablet and mobile */
+@media (max-width: 768px){
+    
+ div.product-container{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    gap: 5px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+}
+@media (max-width: 500px){
+div.main-section > div.product-container{
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+div.main-section > div.product-container div.card{
+    height: 370px;
+    border-radius: 9px;
+}
+div.card h1{
+    font-size: 20px;
+}
+}

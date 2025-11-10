@@ -1,0 +1,165 @@
+:root{
+    --color-brand: #232323;
+}
+section.hero{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(255, 228, 196, 0.674); */
+}
+div.hero-first-group{
+    display: flex;
+    padding: 23px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.hero-first-group h1{
+    font-size: 58px;
+    font-weight: bold;
+}
+div.hero-second-group{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+div.hero-second-group img{
+    width: 50%;
+    height: 50%;
+    border-radius: 14px;
+    box-shadow: 12px 12px 12px grey;
+}
+div.you{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 13px;
+     justify-content: space-between;
+
+}
+div.you img{
+    height: 300px;
+    width: 300px;
+}
+footer {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+   
+}
+div.container{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+div.container > div{
+    height: 100%;
+}
+div.container div.item {
+width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+div.container div.item> .box{
+    display:flex ;
+    flex-direction: column;
+    gap: 10px;
+}
+div.you{
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    gap: 10px;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+div.you p{
+    margin: 12px 0;
+}
+div.you i{
+    font-size: 20px;
+   background-color: #c2efd4;
+   color: black;
+    padding: 8px;
+    border-radius: 50%;
+}
+div.you i:hover{
+    background-color:  rgb(82, 255, 47);
+    color: white;
+}
+
+
+@media (max-width: 768px){
+div.container div.item {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 11px;
+    margin-top: 14px;
+}
+div.you i{
+    font-size: 19px;
+    margin: 12px 12px;
+    height: 16px;
+    padding: 12px;
+    border-radius: 50%;
+}
+}
+@media (max-width: 500px){
+    div.container div.item {
+        display: block;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+div.you i{
+    font-size: 18px;
+    margin: 12px 12px;
+    height: 16px;
+    padding: 12px;
+    border-radius: 50%;
+}
+div.you p{
+    margin: 12px 0;
+    margin-right: 12px;
+    display: flex;
+    flex-direction: column;
+}
+}
+/* responsive */
+@media (max-width: 768px){
+div.hero-first-group h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+div.hero-second-group img{
+    width: 320px;
+    height: 400px;
+}
+section.hero{
+    height: 80vh;
+   gap: 4px;
+}
+}
+
+@media (max-width: 500px){
+div.hero-first-group h1{
+    font-size: 32px;
+}
+div.hero-second-group img{
+    width: 100%;
+    height: 330px;
+}
+section.hero{
+    height: fit-content;
+    grid-template-columns:1fr;
+    gap: 10px;
+    padding: 24px 12px;
+    background-color: var(--color-brand);
+}
+}
