@@ -1,6 +1,4 @@
-:root{
-    --color-brand: #232323;
-}
+
 section.hero{
     height: 100vh;
     width: 100%;
@@ -154,7 +152,8 @@ div.hero-first-group h1{
 div.hero-second-group img{
     width: 100%;
     height: 330px;
-}
+ }
+
 section.hero{
     height: fit-content;
     grid-template-columns:1fr;
@@ -162,4 +161,5 @@ section.hero{
     padding: 24px 12px;
     background-color: var(--color-brand);
 }
+
 }

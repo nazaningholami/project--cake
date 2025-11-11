@@ -10,7 +10,7 @@ div.product-container{
     display: grid;
     margin: 0 auto;
     gap: 10px;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
  div.product-container div.card{
     height: 300px;
@@ -61,15 +61,9 @@ div.main-section > div.product-container div.card:hover > div.card-text{
 
 }
 @media (max-width: 500px){
-div.main-section > div.product-container{
+
+ div.product-container{
+    gap: 8px;
     grid-template-columns: 1fr;
-    gap: 12px;
-}
-div.main-section > div.product-container div.card{
-    height: 370px;
-    border-radius: 9px;
-}
-div.card h1{
-    font-size: 20px;
 }
 }
